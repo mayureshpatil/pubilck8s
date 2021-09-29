@@ -2,8 +2,9 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: nodeapp
+  namespace: prod
 spec:
-  replicas: 2
+  replicas: 3
   strategy:
     type: RollingUpdate
     rollingUpdate:
@@ -18,7 +19,7 @@ spec:
         app: nodeapp
     spec:
       containers:
-      - image: kammana/nodeapp:v1
+      - image: kammana/nodeapp:v2
         name: nodeapp
         ports:
         - containerPort: 8080
