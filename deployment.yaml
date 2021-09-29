@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: nodeapp
-  namespace: prod
+  namespace: flux-system
 spec:
   replicas: 3
   strategy:
