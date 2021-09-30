@@ -3,4 +3,4 @@ kind: Namespace
 metadata:
   labels:
     istio.io/rev: asm-195-122323
-  name: RCB
+  name: rcb
