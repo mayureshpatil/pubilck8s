@@ -15,6 +15,8 @@ spec:
       app: nodeapp
   template:
     metadata:
+      annotations:
+       fluxcd.io/ignore: "true"
       labels:
         app: nodeapp
     spec:
