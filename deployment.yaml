@@ -4,7 +4,7 @@ metadata:
   name: nodeapp
   namespace: git
 spec:
-  replicas: 5
+  replicas: 2
   strategy:
     type: RollingUpdate
     rollingUpdate:
@@ -19,7 +19,7 @@ spec:
         app: nodeapp
     spec:
       containers:
-      - image: kammana/nodeapp:v1
+      - image: us-central1-docker.pkg.dev/tidal-cirrus-321416/fluxpoc/nodeapp:v2
         name: nodeapp
         ports:
         - containerPort: 8080
