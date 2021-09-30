@@ -3,4 +3,4 @@ kind: Namespace
 metadata:
   labels:
     istio.io/rev: asm-195-12232
-  name: hit
+  name: git
